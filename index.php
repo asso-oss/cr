@@ -52,7 +52,7 @@
     <!-- sisu -->
 <div class="container mt-4">
 <?php 
-$paring = "SELECT * FROM autod";
+$paring = "SELECT * FROM autod LIMIT 8";
 $valjund = mysqli_query($yhendus, $paring);
 
 while($rida = mysqli_fetch_row($valjund)){

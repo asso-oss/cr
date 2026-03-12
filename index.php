@@ -54,8 +54,10 @@
 <?php 
 $paring = "SELECT * FROM autod";
 $valjund = mysqli_query($yhendus, $paring);
-$rida = mysqli_fetch_row($valjund);
-var_dump($rida);
+
+while($rida = mysqli_fetch_row($valjund)){
+  var_dump($rida[1],$rida[2]);
+}
 
 ?>
         <div class="row row-cols-1 row-cols-md-4 g-4">

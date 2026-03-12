@@ -50,7 +50,14 @@
 </nav>
     <!-- /menüü -->
     <!-- sisu -->
-     <div class="container mt-4">
+<div class="container mt-4">
+<?php 
+$paring = "SELECT * FROM autod";
+$valjund = mysqli_query($yhendus, $paring);
+$rida = mysqli_fetch_row($valjund);
+var_dump($rida);
+
+?>
         <div class="row row-cols-1 row-cols-md-4 g-4">
   <div class="col">
     <div class="card h-100">

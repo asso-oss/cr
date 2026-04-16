@@ -1,4 +1,4 @@
-<?php include("config.php"); ?>
+asdasdas<?php include("config.php"); ?>
 
 
 
@@ -14,7 +14,7 @@
     <!-- menüü -->
  <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Autorent</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -52,7 +52,7 @@
     <!-- sisu -->
 <div class="container mt-4">
 <?php 
-$paring = "SELECT * FROM autod LIMIT 8";
+$paring = "SELECT * FROM cars LIMIT 8";
 $valjund = mysqli_query($yhendus, $paring);
 
 while($rida = mysqli_fetch_row($valjund)){

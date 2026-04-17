@@ -6,6 +6,8 @@
         $fuel = $_GET['fuel'];
         $price = $_GET['price'];
         $image = $_GET['image'];
+
+        $paring = "INSERT INTO cars (id, mark, model, engine, fuel, price, image) VALUES (NULL, 'gggg', 'gggg', 'ggg', 'Bensiin', '100', 'ffff')";
     }
 ?>
 

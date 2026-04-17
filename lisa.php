@@ -1,4 +1,6 @@
 <?php
+  include("config.php");
+
     if (!empty($_GET)) {
         $mark = $_GET['mark'];
         $model = $_GET['model'];
@@ -9,10 +11,15 @@
 
         $paring = "INSERT INTO cars (mark, model, engine, fuel, price, image) VALUES ('".$mark."', '".$model."', '".$engine."', '".$fuel."', '".$price."', '".$image."')";
 
-        print_r($paring);
+        $valjund = mysqli_query($yhendus, $paring);
+        $tulemus = mysqli_affected_rows($yhendus);
+
+        if ($tulemus ==1) {
+            header("Location: admin.php");
+        }
     }
 ?>
-
+<h1>Auto lisamine</h1>
 <form action="lisa.php" method="get">
     Mark <input type="text" name="mark" value="ford"><br>
     Model <input type="text" name="model" value="focus"><br>
